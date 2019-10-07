@@ -1,0 +1,285 @@
+﻿[Files]
+File0=Z:\Users\lucasundi\OneDrive - Gymnasium Delbrück\Q1\Info LK\Übung Vererbung Kopie\Version 2\Kurs.java
+File1=Z:\Users\lucasundi\OneDrive - Gymnasium Delbrück\Q1\Info LK\Übung Vererbung Kopie\Version 2\Lehrer.java
+File2=Z:\Users\lucasundi\OneDrive - Gymnasium Delbrück\Q1\Info LK\Übung Vererbung Kopie\Version 2\Personen.java
+File3=Z:\Users\lucasundi\OneDrive - Gymnasium Delbrück\Q1\Info LK\Übung Vererbung Kopie\Version 2\Teilnehmer.java
+
+[Box:  - Kurs]
+X=351
+Y=499
+MinVis=0
+ShowParameter=1
+SortOrder=0
+ShowIcons=0
+FontSize=12
+FontName=Segoe UI
+
+[Object:  - kurs1]
+X=323
+Y=894
+Name=kurs1
+Typ=Kurs
+
+[Box:  - Lehrer]
+X=254
+Y=271
+MinVis=0
+ShowParameter=1
+SortOrder=0
+ShowIcons=0
+FontSize=12
+FontName=Segoe UI
+
+[Box:  - Personen]
+X=446
+Y=24
+MinVis=0
+ShowParameter=1
+SortOrder=0
+ShowIcons=0
+FontSize=12
+FontName=Segoe UI
+
+[Object:  - RueFlo]
+X=642
+Y=513
+Name=RueFlo
+Typ=Teilnehmer
+
+[Object:  - SunLuc21]
+X=735
+Y=515
+Name=SunLuc21
+Typ=Teilnehmer
+
+[Box:  - Teilnehmer]
+X=717
+Y=247
+MinVis=0
+ShowParameter=1
+SortOrder=0
+ShowIcons=0
+FontSize=12
+FontName=Segoe UI
+
+[Diagram]
+comments=0
+OffsetX=653
+OffsetY=0
+Visibility=0
+ShowParameter=1
+SortOrder=0
+ShowIcons=0
+ShowConnections=0
+Fontname=Segoe UI
+Fontsize=12
+ShowObjectDiagram=0
+
+[Connections]
+V0=kurs1#Kurs#InstanceOf##0#0#0
+V1=Lehrer#Personen#Inheritends##0#0#0
+V2=Lehrer#Kurs#AssociationDirected##0#0#0
+V3=RueFlo#Teilnehmer#InstanceOf##0#0#0
+V4=SunLuc21#Teilnehmer#InstanceOf##0#0#0
+V5=Teilnehmer#Personen#Inheritends##0#0#0
+V6=Teilnehmer#Kurs#Aggregation##0#0#0
+V7=RueFlo#kurs1#AssociationDirected##0#0#0
+V8=SunLuc21#kurs1#AssociationDirected##0#0#0
+
+[Interactive]
+I0=
+I1=Lehrer RALLE = new Lehrer("Brinkmann", "Ralf", 45, "BM");
+I2=RALLE.kursAnbieten("Kamera-Kurs", 10, "BM");
+I3=Teilnehmer rueFlo21 = new Teilnehmer("Rüsing", "Florian", 16);
+I4=Lehrer kempe = new Lehrer("Kempe", "Thomas", 40, "KP");
+I5=kempe.kursAnbieten("Wirtschaftsplanspiel", 24, "KP");
+I6=Teilnehmer rueflo21 = new Teilnehmer("Rüsing", "Florian", 16);
+I7=Teilnehmer rasjul21 = new Teilnehmer("Rasche", "Julia", 16);
+I8=rueflo21.kursBelegen1(kurs1);
+I9=Lehrer Rossi = new Lehrer("Rossig", "André", 44, "RS");
+I10=Teilnehmer Jensemann = new Teilnehmer("Rübbeke", "Jens", 16);
+I11=Rossi.kursAnbieten("Science4You", 50, "RS BM");
+I12=Jensemann.kursBelegen1(kurs1);
+I13=Lehrer lehrer1 = new Lehrer("jnscj", "sknf", 2, "sn");
+I14=Teilnehmer teilnehmer1 = new Teilnehmer("sdjbnf", "skjf", 2);
+I15=lehrer1.kursAnbieten("zz", 3, "bz");
+I16=teilnehmer1.kursBelegen1(kurs1);
+I17=Lehrer Milano = new Lehrer("Milahn", "Martina", 70, "MH");
+I18=Teilnehmer dohhen21 = new Teilnehmer("das Lama", "Hector", 0);
+I19=Milano.kursAnbieten("ESSEN ( DAS WAS JEDEM SPAß   MACHT", 3, "MH");
+I20=dohhen21.kursBelegen1(kurs1);
+I21=Lehrer Ramsi = new Lehrer("jdf", "dkhf", 40, "rs");
+I22=Ramsi.kursAnbieten("ksdjsakjdl", 12, "hg");
+I23=Teilnehmer teilnehmer1 = new Teilnehmer("chjdf", "dlsjjf", 16);
+I24=teilnehmer1.kursBelegen1(kurs1);
+I25=teilnehmer1.kursBelegen1(kurs1);
+I26=Lehrer lehrer1 = new Lehrer("kdngjkdsg", "dskjfjdsf", 0, "dsjf");
+I27=lehrer1.kursAnbieten("kfdf", 1, "jf");
+I28=Teilnehmer teilnehmer1 = new Teilnehmer("orfkd", "ksef", 0);
+I29=teilnehmer1.kursBelegen1(kurs1);
+I30=Lehrer RS = new Lehrer("Rossig", "André", 40, "RS");
+I31=Teilnehmer rueflo21 = new Teilnehmer("Rüsing", "Florian", 16);
+I32=RS.kursAnbieten("Literatur", 20, RS);
+I33=rueflo21.kursBelegen1(kurs1, 0);
+I34=RS.druckeKursliste(kurs1);
+I35=kurs1.druckeListe();
+I36=RS.druckeKursliste(kurs1);
+I37=Lehrer RS = new Lehrer("Rossig", "André", 40, "RS");
+I38=Teilnehmer rueflo21 = new Teilnehmer("Rüsing", "Florian", 16);
+I39=RS.kursAnbieten("Physik GK", 12, RS);
+I40=rueflo21.kursBelegen1(kurs1, 0);
+I41=kurs1.teinehmerSuche2("Rüsing,Florian");
+I42=kurs1.teinehmerSuche2("Rüsing");
+I43=kurs1.teinehmerSuche2("Rüsing Florian");
+I44=kurs1.teinehmerSuche2("Rüsing, Florian");
+I45=kurs1.teinehmerSuche2("Florian");
+I46=Lehrer RS = new Lehrer("Rossig", "André", 40, "");
+I47=Teilnehmer rueflo21 = new Teilnehmer("Rüsing", "Florian", 16);
+I48=RS.kursAnbieten("Science 4 You", 20, "RS & BM");
+I49=rueflo21.kursBelegen1(kurs1, 0);
+I50=kurs1.teinehmerSuche2("Florian", "Rüsing");
+I51=Lehrer lehrer1 = new Lehrer("Rossig", "André", 40, "RS");
+I52=lehrer1.kursAnbieten("physik", 10, "rs");
+I53=Teilnehmer rueflo21 = new Teilnehmer("Rüsing", "Florian", 16);
+I54=rueflo21.kursBelegen1(kurs1, 0);
+I55=kurs1.teinehmerSuche2("", "Rüsing,Florian");
+I56=Lehrer lehrer1 = new Lehrer("RS", "RS", 40, "Rs");
+I57=lehrer1.kursAnbieten("physik", 10, "Rs");
+I58=Teilnehmer rueflo21 = new Teilnehmer("Rüsing", "Florian", 16);
+I59=rueflo21.kursBelegen1(kurs1, 0);
+I60=kurs1.teinehmerSuche2("Florian", "Rüsing");
+I61=Lehrer lehrer1 = new Lehrer("RS", "SR", 40, "RS");
+I62=Teilnehmer rueflo21 = new Teilnehmer("Rüsing", "Florian", 16);
+I63=lehrer1.kursAnbieten("physik", 10, "rs");
+I64=rueflo21.kursBelegen1(kurs1, 0);
+I65=Teilnehmer teilnehmer1 = new Teilnehmer("Alex", "Meier", 16);
+I66=Teilnehmer teilnehmer2 = new Teilnehmer("Fabian ", "Fraune", 0);
+I67=Teilnehmer teilnehmer3 = new Teilnehmer("Sara", "Keuter", 16);
+I68=Teilnehmer teilnehmer4 = new Teilnehmer("Julian", "Düsterhus", 16);
+I69=Teilnehmer teilnehmer5 = new Teilnehmer("Martin", "Meis", 17);
+I70=Teilnehmer teilnehmer6 = new Teilnehmer("Jan-Luca", "Gerlach", 17);
+I71=Teilnehmer teilnehmer8 = new Teilnehmer("Lukas", "Alfermann", 16);
+I72=Teilnehmer teilnehmer9 = new Teilnehmer("Tobias", "Holtkamp", 16);
+I73=Teilnehmer teilnehmer10 = new Teilnehmer("Christoph", "Wecker", 16);
+I74=Teilnehmer teilnehmer11 = new Teilnehmer("Justin", "Darlinger", 0);
+I75=teilnehmer11.kursBelegen1(kurs1, 0);
+I76=teilnehmer1.kursBelegen1(kurs1, 0);
+I77=teilnehmer5.kursBelegen1(kurs1, 0);
+I78=teilnehmer10.kursBelegen1(kurs1, 0);
+I79=teilnehmer11.kursBelegen1(kurs1, 0);
+I80=teilnehmer4.kursBelegen1(kurs1, 1);
+I81=teilnehmer2.kursBelegen1(kurs1, 1);
+I82=teilnehmer2.kursBelegen1(kurs1, 0);
+I83=kurs1.setTeilnehmerZahl(9);
+I84=teilnehmer2.kursBelegen1(kurs1, 0);
+I85=Lehrer lehrer1 = new Lehrer("rs", "rs", 40, "rs");
+I86=Teilnehmer teilnehmer1 = new Teilnehmer("Rüsing", "Florian", 16);
+I87=Teilnehmer teilnehmer2 = new Teilnehmer("Fraune", "Fabian", 0);
+I88=lehrer1.kursAnbieten("physik", 10, "rs");
+I89=teilnehmer1.kursBelegen1(kurs1, 0);
+I90=Lehrer lehrer1 = new Lehrer("rs", "rs", 4, "rs");
+I91=Teilnehmer teilnehmer1 = new Teilnehmer("rüsing", "florian", 16);
+I92=Teilnehmer teilnehmer2 = new Teilnehmer("frazd", "fdsdjf", 0);
+I93=lehrer1.kursAnbieten("physik", 10, "sd");
+I94=teilnehmer1.kursBelegen1(kurs1, 0);
+I95=teilnehmer1.kursBelegen1(kurs1, 0);
+I96=teilnehmer2.kursBelegen1(kurs1, 0);
+I97=teilnehmer2.kursBelegen1(kurs1, 0);
+I98=Lehrer lehrer1 = new Lehrer("rs", "rs", 1, "es");
+I99=lehrer1.kursAnbieten("physik", 10, "rs");
+I100=Teilnehmer teilnehmer1 = new Teilnehmer("rdshj", "gfhf", 0);
+I101=teilnehmer1.kursBelegen1(kurs1, 0);
+I102=Teilnehmer teilnehmer2 = new Teilnehmer("hgdft", "nfdsa", 0);
+I103=teilnehmer2.kursBelegen1(kurs1, 4);
+I104=Kurs k123 = new Kurs("k123", 5, "");
+I105=Teilnehmer RueFlo21 = new Teilnehmer("Rüsing", "Florian", 16);
+I106=RueFlo21.kursBelegen1(k123, 0);
+I107=Teilnehmer FraFab21 = new Teilnehmer("Fraune", "Fabian", 16);
+I108=FraFab21.kursBelegen1(k123, 0);
+I109=FraFab21.kursBelegen1(k123, 0);
+I110=FraFab21.kursBelegen1(k123, 1);
+I111=Kurs k123 = new Kurs("k123", 20, "rs");
+I112=Teilnehmer RueFlo = new Teilnehmer("Rüsing", "Florian", 16);
+I113=RueFlo.kursBelegen1(k123, 0);
+I114=Teilnehmer frafab21 = new Teilnehmer("Fraune", "Fabian", 16);
+I115=frafab21.kursBelegen1(k123, 0);
+I116=k123.teinehmerSuche2("Florian", "Rüsing");
+I117=k123.teilnehmerHinzufügen("Fabian", "Fraune");
+I118=Kurs k345 = new Kurs("k345", 13, "rs");
+I119=RueFlo.kursBelegen1(k345, 2);
+I120=frafab21.kursBelegen1(k345, 1);
+I121=Kurs k10 = new Kurs("Philosophie", 16, "JER");
+I122=Teilnehmer HolTob21 = new Teilnehmer("Holtkamp", "Tobias", 16);
+I123=Teilnehmer GerJan21 = new Teilnehmer("Gerlach", "Jan Luca", 17);
+I124=Teilnehmer MeiMar21 = new Teilnehmer("Meiß", "Martin", 17);
+I125=MeiMar21.kursBelegen1(k10, 0);
+I126=HolTob21.kursBelegen1(k10, 0);
+I127=GerJan21.kursBelegen1(k10, 0);
+I128=k10.teinehmerSuche2("Tobias", "Holtkamp");
+I129=k10.teinehmerAbmelden("Tobias", "Holtkamp");
+I130=k10.druckeListe();
+I131=Kurs k11 = new Kurs("Sport", 10, "RS");
+I132=Teilnehmer HolTob21 = new Teilnehmer("Holtkamp", "Tobias", 16);
+I133=Teilnehmer PeiDan21 = new Teilnehmer("Peitz", "Daniel", 17);
+I134=Teilnehmer MeiMar21 = new Teilnehmer("Meis", "Martin", 17);
+I135=Teilnehmer GerJan21 = new Teilnehmer("Gerlach", "Jan Luca", 17);
+I136=Teilnehmer WecChr = new Teilnehmer("Wecker", "Christoph", 17);
+I137=WecChr.kursBelegen1(k11, 0);
+I138=MeiMar21.kursBelegen1(k11, 0);
+I139=HolTob21.kursBelegen1(k11, 0);
+I140=GerJan21.kursBelegen1(k11, 0);
+I141=PeiDan21.kursBelegen1(k11, 0);
+I142=k11.druckeListe();
+I143=k11.teinehmerAbmelden("Daniel", "Peitz");
+I144=k11.teinehmerAbmelden("Jan Luca", "Gerlach");
+I145=GerJan21.kursBelegen1(k11, 1);
+I146=PeiDan21.kursBelegen1(k11, 1);
+I147=Kurs kurs1 = new Kurs("Physik", 19, "RS");
+I148=Teilnehmer teilnehmer1 = new Teilnehmer("", "", 0);
+I149=Teilnehmer RueFlo = new Teilnehmer("Rüsing", "Florian", 16);
+I150=Kurs kurs23 = new Kurs("Physik", 12, "r");
+I151=RueFlo.kursBelegen1(kurs23, 0);
+I152=RueFlo.teilnehmerAbmeldenKurs(kurs23);
+I153=Kurs kurs23 = new Kurs("Physik", 16, "RS");
+I154=Teilnehmer HolTob21 = new Teilnehmer("Holtkamp", "Tobias", 17);
+I155=HolTob21.kursBelegen1(kurs23, 0);
+I156=HolTob21.teilnehmerAbmeldenKurs(kurs23);
+I157=Kurs kurs 34 = new Kurs("Physik Lk", 12, "RS");
+I158=Teilnehmer HolTob21 = new Teilnehmer("Holtkamp", "Tobias", 17);
+I159=HolTob21.kursBelegen1(kurs 34, 0);
+I160=Kurs kurs1 = new Kurs("Info", 0, "KG");
+I161=kurs1.sort();
+I162=kurs1.sort();
+I163=kurs1.sort();
+I164=kurs1.sort();
+I165=kurs1.sort();
+I166=kurs1.sort();
+I167=Kurs kurs1 = new Kurs("Physik", 0, "KG");
+I168=kurs1.sort();
+I169=kurs1.sort();
+I170=kurs1.sort();
+I171=kurs1.sort();
+I172=kurs1.sort();
+I173=kurs1.sort();
+I174=Lehrer RS = new Lehrer("Rossig", "André", 0000, "RS");
+I175=RS.kursAnbieten("Physik", 6, RS);
+I176=Teilnehmer RueFlo21 = new Teilnehmer("Rüsing", "Florian", 16);
+I177=Teilnehmer RueJen21 = new Teilnehmer("Rübbelke", "Jens", 16);
+I178=Teilnehmer SunLuc21 = new Teilnehmer("Sundermeier", "Luca", 0);
+I179=SunLuc21.kursBelegen1(kurs1, 0);
+I180=RueJen21.kursBelegen1(kurs1, 0);
+I181=RueFlo21.kursBelegen1(kurs1, 0);
+I182=Lehrer RS = new Lehrer("Rossig", "André", 0, "RS");
+I183=RS.kursAnbieten("Physik", 4, RS);
+I184=Teilnehmer RueFlo = new Teilnehmer("Rüsing", "Florian", 16);
+I185=Teilnehmer MaiHan21 = new Teilnehmer("Maier", "Hans", 40);
+I186=Teilnehmer SunLuc21 = new Teilnehmer("Sundermeier", "Luca", 16);
+I187=MaiHan21.kursBelegen1(kurs1, 0);
+I188=RueFlo.kursBelegen1(kurs1, 0);
+I189=RueFlo.kursBelegen1(kurs1, 0);
+I190=Kurs kurs1 = new Kurs("Phyik", 4, "rs");
+I191=Teilnehmer RueFlo = new Teilnehmer("Rüsing", "Florian", 16);
+I192=Teilnehmer SunLuc21 = new Teilnehmer("Sundermeier", "Luca", 16);
+I193=SunLuc21.kursBelegen1(kurs1, 0);
+I194=RueFlo.kursBelegen1(kurs1, 0);
+
